@@ -1,0 +1,9 @@
+﻿cookie_id,skill_name,skill_name_en,desc_kr,desc_en
+CK001,용감한 돌진,Brave Dash,전방으로 돌진하며 적에게 피해를 줍니다.,Dashes forward and damages enemies.
+CK002,딸기 방패,Strawberry Shield,딸기 방패로 아군을 보호합니다.,Protects allies with a strawberry shield.
+CK003,번개 마법,Lightning Magic,강력한 번개를 소환하여 적을 공격합니다.,Summons powerful lightning to attack enemies.
+CK005,피의 연회,Blood Feast,적의 생명력을 흡수하여 자신을 회복합니다.,Absorbs enemy life force to heal self.
+CK006,생명의 허브,Herb of Life,아군 전체의 HP를 회복시킵니다.,Heals HP of all allies.
+CK009,순수한 치유,Pure Healing,신성한 빛으로 아군을 치유하고 보호합니다.,Heals and protects allies with holy light.
+CK010,다크카카오의 심판,Dark Cacao's Judgment,거대한 검으로 적에게 강력한 일격을 가합니다.,Strikes enemies with a massive sword.
+CK012,해일 소환,Summon Tidal Wave,거대한 해일을 소환하여 적을 휩쓸어버립니다.,Summons a massive tidal wave to sweep enemies.

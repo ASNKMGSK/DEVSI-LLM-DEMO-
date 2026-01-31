@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/AKS/Desktop/데브시스터즈 프로젝트/backend 리팩토링 시작/ml/mlruns/982806897084932593/a7fe54a8ff754813ada606b94731dba9/artifacts
+end_time: 1769853029442
+entry_point_name: ''
+experiment_id: '982806897084932593'
+lifecycle_stage: active
+run_id: a7fe54a8ff754813ada606b94731dba9
+run_name: user_segmentation_model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769853019225
+status: 3
+tags: []
+user_id: AKS

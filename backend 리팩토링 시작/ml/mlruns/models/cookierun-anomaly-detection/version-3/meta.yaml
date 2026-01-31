@@ -1,0 +1,15 @@
+creation_timestamp: 1769861533791
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1769861533791
+model_id: m-e972a7ce1a98436587e66985d03cf869
+name: cookierun-anomaly-detection
+run_id: a7953300693f4f98ba11bdfaa5fb0c88
+run_link: null
+source: models:/m-e972a7ce1a98436587e66985d03cf869
+status: READY
+status_message: null
+storage_location: file:///C:/Users/AKS/Desktop/데브시스터즈 프로젝트/backend 리팩토링 시작/ml/mlruns/982806897084932593/models/m-e972a7ce1a98436587e66985d03cf869/artifacts
+user_id: null
+version: 3

@@ -1,0 +1,15 @@
+creation_timestamp: 1769862800535
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1769862800535
+model_id: m-3c6b43098bdd4d7e89542f6ac27b342d
+name: cookierun-user-segment
+run_id: ca3219dc03ea4f65bd17bf667862815a
+run_link: null
+source: models:/m-3c6b43098bdd4d7e89542f6ac27b342d
+status: READY
+status_message: null
+storage_location: file:///C:/Users/AKS/Desktop/데브시스터즈 프로젝트/backend 리팩토링 시작/ml/mlruns/982806897084932593/models/m-3c6b43098bdd4d7e89542f6ac27b342d/artifacts
+user_id: null
+version: 4

@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/AKS/Desktop/데브시스터즈 프로젝트/backend 리팩토링 시작/ml/mlruns/982806897084932593/models/m-50727809f7b74735b2307ccac4b2598a/artifacts
+creation_timestamp: 1769853019526
+experiment_id: '982806897084932593'
+last_updated_timestamp: 1769853029291
+model_id: m-50727809f7b74735b2307ccac4b2598a
+model_type: null
+name: user_segmentation_model
+source_run_id: a7fe54a8ff754813ada606b94731dba9
+status: 2
+status_message: null

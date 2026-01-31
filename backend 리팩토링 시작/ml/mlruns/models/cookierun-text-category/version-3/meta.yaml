@@ -1,0 +1,15 @@
+creation_timestamp: 1769861510403
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1769861510403
+model_id: m-4a4d864e296f4af6b98583731d222cdf
+name: cookierun-text-category
+run_id: 3417b9b6a76b4473a7a0e9a490ebb01b
+run_link: null
+source: models:/m-4a4d864e296f4af6b98583731d222cdf
+status: READY
+status_message: null
+storage_location: file:///C:/Users/AKS/Desktop/데브시스터즈 프로젝트/backend 리팩토링 시작/ml/mlruns/982806897084932593/models/m-4a4d864e296f4af6b98583731d222cdf/artifacts
+user_id: null
+version: 3

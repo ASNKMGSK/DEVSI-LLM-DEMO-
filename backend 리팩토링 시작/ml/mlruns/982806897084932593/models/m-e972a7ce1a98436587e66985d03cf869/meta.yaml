@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/AKS/Desktop/데브시스터즈 프로젝트/backend 리팩토링 시작/ml/mlruns/982806897084932593/models/m-e972a7ce1a98436587e66985d03cf869/artifacts
+creation_timestamp: 1769861522812
+experiment_id: '982806897084932593'
+last_updated_timestamp: 1769861533714
+model_id: m-e972a7ce1a98436587e66985d03cf869
+model_type: null
+name: anomaly_model
+source_run_id: a7953300693f4f98ba11bdfaa5fb0c88
+status: 2
+status_message: null

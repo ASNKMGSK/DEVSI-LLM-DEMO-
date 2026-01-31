@@ -1,0 +1,15 @@
+creation_timestamp: 1769853007305
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1769853007305
+model_id: m-9411fd2f0e934cefb4b40f3318cbce47
+name: cookierun-translation-quality
+run_id: 96ce5cd9e95b42b590bb7e615a5e8a44
+run_link: null
+source: models:/m-9411fd2f0e934cefb4b40f3318cbce47
+status: READY
+status_message: null
+storage_location: file:///C:/Users/AKS/Desktop/데브시스터즈 프로젝트/backend 리팩토링 시작/ml/mlruns/982806897084932593/models/m-9411fd2f0e934cefb4b40f3318cbce47/artifacts
+user_id: null
+version: 2
