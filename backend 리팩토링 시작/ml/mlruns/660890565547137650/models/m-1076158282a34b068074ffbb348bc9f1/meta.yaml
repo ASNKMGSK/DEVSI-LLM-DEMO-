@@ -1,0 +1,11 @@
+artifact_location: file:C:\Users\AKS\Desktop\데브시스터즈 프로젝트\backend 리팩토링 시작\ml\mlruns/660890565547137650/models/m-1076158282a34b068074ffbb348bc9f1/artifacts
+creation_timestamp: 1769933507203
+experiment_id: '660890565547137650'
+last_updated_timestamp: 1769933507203
+lifecycle_stage: active
+model_id: m-1076158282a34b068074ffbb348bc9f1
+model_type: null
+name: text_category_model
+source_run_id: fca7561fe15b4421befbf115e90a1270
+status: 1
+status_message: null

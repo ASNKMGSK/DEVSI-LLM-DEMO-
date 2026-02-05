@@ -1,0 +1,14 @@
+artifact_uri: file:C:\Users\AKS\Desktop\데브시스터즈 프로젝트\backend 리팩토링 시작\ml\mlruns/660890565547137650/b5f86b624c39481cbc8866a41f588854/artifacts
+end_time: 1770019338932
+entry_point_name: ''
+experiment_id: '660890565547137650'
+lifecycle_stage: active
+run_id: b5f86b624c39481cbc8866a41f588854
+run_name: translation_quality_model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770019328120
+status: 3
+tags: []
+user_id: AKS

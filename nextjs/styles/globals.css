@@ -1,0 +1,437 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============== CookieRun Design Tokens (Soft & Clean) ============== */
+:root {
+  --bg: #F8F7F4;
+  --panel: #ffffff;
+  --panel2: rgba(255,255,255,0.95);
+  --border: rgba(92,74,61,0.08);
+  --border2: rgba(92,74,61,0.12);
+  --text: #3D3428;
+  --muted: #8C7E6E;
+  --muted2: #6B5D4D;
+
+  /* 쿠키런 브랜드 컬러 (부드러운 버전) */
+  --cookie-yellow: #EAC54F;
+  --cookie-orange: #D97B4A;
+  --cookie-brown: #5C4A3D;
+  --cookie-cream: #FAF8F5;
+  --cookie-dark: #3D3428;
+  --cookie-beige: #F0EDE8;
+  --cookie-light: #FDF9F3;
+
+  --primary: #D97B4A;
+  --primary2: #EAC54F;
+  --ring: rgba(217,123,74,0.12);
+
+  --success: #5CB97A;
+  --success2: #3DA35D;
+
+  --danger: #D96B6B;
+  --dangerBg: #FDF4F4;
+
+  --shadow: 0 2px 8px rgba(60,52,40,0.05);
+  --shadowHover: 0 8px 24px rgba(60,52,40,0.08);
+  --shadowSoft: 0 4px 16px rgba(60,52,40,0.04);
+  --shadowCookie: 0 4px 12px rgba(234,197,79,0.15);
+}
+
+html, body { height: 100%; }
+
+body {
+  color: var(--text);
+  background: var(--bg);
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+
+  /* 쿠키 패턴 배경 */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%23D97B4A' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='12'/%3E%3Ccircle cx='30' cy='24' r='2'/%3E%3Ccircle cx='24' cy='32' r='2'/%3E%3Ccircle cx='36' cy='32' r='2'/%3E%3Ccircle cx='28' cy='36' r='1.5'/%3E%3Ccircle cx='34' cy='28' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+
+* { box-sizing: border-box; }
+
+::selection { background: rgba(217,123,74,0.15); }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(92,74,61,0.15); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(92,74,61,0.25); }
+
+/* 스크롤바 숨김 (스크롤은 가능) */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ============== CookieRun Components (Clean & Interactive) ============== */
+@layer components {
+  .glass {
+    background: var(--panel2);
+    backdrop-filter: blur(12px);
+  }
+
+  /* 기본 버튼 - 진한 브라운/오렌지 */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold;
+    background: linear-gradient(135deg, #C06030 0%, #8B4513 100%);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(139,69,19,0.3);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(139,69,19,0.4);
+    background: linear-gradient(135deg, #A04820 0%, #6B3410 100%);
+  }
+  .btn:active { transform: translateY(0); }
+  .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+  /* 보조 버튼 */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold;
+    background: var(--panel);
+    color: var(--cookie-brown);
+    border: 1px solid var(--border2);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-secondary:hover {
+    background: var(--cookie-beige);
+    border-color: rgba(217,123,74,0.2);
+  }
+
+  /* 고스트 버튼 */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold;
+    background: transparent;
+    color: var(--muted2);
+    transition: all 0.2s ease;
+  }
+  .btn-ghost:hover {
+    background: var(--cookie-beige);
+    color: var(--cookie-brown);
+  }
+
+  /* 성공 버튼 */
+  .btn-green {
+    background: linear-gradient(135deg, var(--success) 0%, var(--success2) 100%);
+    color: #fff;
+  }
+
+  /* 입력 필드 */
+  .input {
+    @apply w-full rounded-xl px-4 py-2.5 text-sm outline-none;
+    background: var(--panel);
+    border: 1px solid var(--border2);
+    color: var(--text);
+    transition: all 0.2s ease;
+  }
+  .input:focus {
+    border-color: var(--cookie-orange);
+    box-shadow: 0 0 0 3px var(--ring);
+  }
+  .input::placeholder {
+    color: var(--muted);
+  }
+
+  /* 카드 */
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card:hover {
+    box-shadow: var(--shadowHover);
+    border-color: var(--border2);
+  }
+
+  .card-header {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--cookie-brown);
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mini-muted {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  /* 배지 */
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium;
+    background: var(--cookie-beige);
+    color: var(--cookie-brown);
+  }
+  .badge-success { background: rgba(92,185,122,0.12); color: #2D6A4F; }
+  .badge-danger { background: rgba(217,107,107,0.12); color: #9B2C2C; }
+  .badge-orange { background: rgba(217,123,74,0.12); color: var(--cookie-brown); }
+
+  /* 등급별 배지 */
+  .badge-common { background: rgba(156,163,175,0.1); color: #4B5563; }
+  .badge-rare { background: rgba(96,165,250,0.1); color: #1D4ED8; }
+  .badge-epic { background: rgba(192,132,252,0.1); color: #7C3AED; }
+  .badge-legendary { background: rgba(234,197,79,0.15); color: #92400E; }
+  .badge-ancient { background: rgba(217,123,74,0.15); color: #9A3412; }
+
+  /* 탭 */
+  .tab {
+    @apply relative rounded-lg px-4 py-2 text-sm font-medium whitespace-nowrap;
+    color: var(--muted);
+    transition: all 0.2s ease;
+  }
+  .tab:hover {
+    color: var(--cookie-brown);
+    background: var(--cookie-beige);
+  }
+  .tab-active {
+    color: var(--cookie-brown);
+    background: var(--cookie-beige);
+  }
+  .tab-active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background: var(--cookie-orange);
+    border-radius: 1px;
+  }
+
+  /* 디테일/아코디언 */
+  .details {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.875rem 1rem;
+    transition: all 0.2s ease;
+  }
+  .details:hover {
+    border-color: var(--border2);
+  }
+  details > summary {
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    color: var(--cookie-brown);
+    transition: color 0.2s ease;
+  }
+  details > summary:hover {
+    color: var(--cookie-orange);
+  }
+  details > summary::-webkit-details-marker { display: none; }
+
+  /* 채팅 버블 */
+  .chat-bubble {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    background: var(--panel);
+    transition: all 0.2s ease;
+  }
+  .chat-bubble-user {
+    background: var(--cookie-light);
+    border-color: rgba(234,197,79,0.2);
+  }
+  .chat-bubble-ai {
+    background: var(--panel);
+    border-color: var(--border);
+  }
+
+  /* 테이블 */
+  .table { @apply min-w-full text-sm; }
+  .table thead th {
+    @apply text-left py-3 pr-4 whitespace-nowrap font-medium;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+  }
+  .table tbody td {
+    @apply py-3 pr-4;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+  .table tbody tr {
+    transition: background 0.15s ease;
+  }
+  .table tbody tr:hover td {
+    background: var(--cookie-beige);
+  }
+
+  /* 스켈레톤 로더 */
+  .skeleton {
+    position: relative;
+    overflow: hidden;
+    background: var(--cookie-beige);
+    border-radius: 8px;
+  }
+  .skeleton::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    animation: shimmer 1.5s infinite;
+  }
+  @keyframes shimmer { 100% { transform: translateX(100%); } }
+
+  /* 쿠키런 카드 */
+  .cookie-card {
+    @apply rounded-2xl p-4;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .cookie-card:hover {
+    border-color: rgba(217,123,74,0.2);
+    box-shadow: var(--shadowHover);
+    transform: translateY(-2px);
+  }
+
+  .cookie-header {
+    @apply flex items-center gap-3 pb-3 mb-3;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .cookie-icon {
+    @apply w-10 h-10 rounded-xl flex items-center justify-center;
+    background: linear-gradient(135deg, var(--cookie-yellow) 0%, var(--cookie-orange) 100%);
+    box-shadow: var(--shadowCookie);
+  }
+
+  /* 인터랙티브 요소들 */
+  .interactive {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+  .interactive:hover {
+    transform: translateY(-1px);
+  }
+  .interactive:active {
+    transform: translateY(0);
+  }
+
+  /* 포커스 링 */
+  .focus-ring:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--ring);
+  }
+
+  /* 부드러운 페이드 인 */
+  .fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* 슬라이드 인 */
+  .slide-in {
+    animation: slideIn 0.25s ease-out;
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  /* 펄스 애니메이션 */
+  .pulse-soft {
+    animation: pulseSoft 2s ease-in-out infinite;
+  }
+  @keyframes pulseSoft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  /* 쿠키 플로팅 애니메이션 */
+  .cookie-float {
+    animation: cookieFloat 3s ease-in-out infinite;
+  }
+  @keyframes cookieFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  /* 쿠키 로테이트 */
+  .cookie-spin {
+    animation: cookieSpin 8s linear infinite;
+  }
+  @keyframes cookieSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* 쿠키 바운스 */
+  .cookie-bounce {
+    animation: cookieBounce 0.5s ease;
+  }
+  @keyframes cookieBounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  /* 쿠키 그라데이션 텍스트 */
+  .cookie-text {
+    background: linear-gradient(135deg, var(--cookie-orange) 0%, var(--cookie-yellow) 50%, var(--cookie-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* 쿠키 글로우 효과 */
+  .cookie-glow {
+    box-shadow: 0 0 20px rgba(234,197,79,0.3), 0 0 40px rgba(217,123,74,0.15);
+  }
+
+  /* 쿠키 보더 그라데이션 */
+  .cookie-border {
+    border: 2px solid transparent;
+    background:
+      linear-gradient(var(--panel), var(--panel)) padding-box,
+      linear-gradient(135deg, var(--cookie-yellow), var(--cookie-orange)) border-box;
+  }
+
+  /* 호버 하이라이트 */
+  .hover-highlight {
+    position: relative;
+  }
+  .hover-highlight::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
+    background: var(--cookie-orange);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: -1;
+  }
+  .hover-highlight:hover::before {
+    opacity: 0.06;
+  }
+}
+
+/* 프로즈 스타일 */
+.prose :where(p):not(:where([class~="not-prose"] *)) { color: var(--text); }
+.prose :where(code):not(:where([class~="not-prose"] *)) {
+  color: var(--cookie-brown);
+  background: var(--cookie-beige);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.375rem;
+  font-size: 0.875em;
+}
+.prose :where(a):not(:where([class~="not-prose"] *)) {
+  color: var(--cookie-orange);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.prose :where(a):hover:not(:where([class~="not-prose"] *)) {
+  color: var(--cookie-brown);
+}
+.prose :where(strong):not(:where([class~="not-prose"] *)) { color: var(--cookie-brown); }

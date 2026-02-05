@@ -1,0 +1,15 @@
+creation_timestamp: 1770020215729
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1770020215729
+model_id: m-c27262eb2df74a98989e280e16cb2e3c
+name: 이상탐지
+run_id: f0b0b3a756b743b99cf4ff4e55baae5e
+run_link: null
+source: models:/m-c27262eb2df74a98989e280e16cb2e3c
+status: READY
+status_message: null
+storage_location: file:C:\Users\AKS\Desktop\데브시스터즈 프로젝트\backend 리팩토링 시작\ml\mlruns/660890565547137650/models/m-c27262eb2df74a98989e280e16cb2e3c/artifacts
+user_id: null
+version: 3

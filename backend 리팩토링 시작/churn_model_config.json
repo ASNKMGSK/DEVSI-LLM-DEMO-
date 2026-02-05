@@ -1,0 +1,38 @@
+{
+  "features": [
+    "level",
+    "days_since_register",
+    "days_since_last_login",
+    "total_events",
+    "stage_clears",
+    "gacha_pulls",
+    "pvp_battles",
+    "purchases",
+    "vip_level"
+  ],
+  "feature_names_kr": {
+    "level": "유저 레벨",
+    "days_since_register": "가입 후 일수",
+    "days_since_last_login": "마지막 접속 후 일수",
+    "total_events": "총 활동량",
+    "stage_clears": "스테이지 클리어",
+    "gacha_pulls": "가챠 횟수",
+    "pvp_battles": "PvP 전투",
+    "purchases": "인앱 구매",
+    "vip_level": "VIP 레벨"
+  },
+  "feature_importances": {
+    "level": 0.04422217564077239,
+    "days_since_register": 0.07402709646476918,
+    "days_since_last_login": 0.14355466645834364,
+    "total_events": 0.15335350335771755,
+    "stage_clears": 0.17722723879922914,
+    "gacha_pulls": 0.11560254993009068,
+    "pvp_battles": 0.14519226659216533,
+    "purchases": 0.13567679749988062,
+    "vip_level": 0.011143705257031424
+  },
+  "shap_available": true,
+  "model_accuracy": 0.94,
+  "model_f1": 0.6666666666666666
+}

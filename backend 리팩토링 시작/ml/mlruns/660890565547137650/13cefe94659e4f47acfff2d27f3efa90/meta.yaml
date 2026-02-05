@@ -1,0 +1,14 @@
+artifact_uri: file:C:\Users\AKS\Desktop\데브시스터즈 프로젝트\backend 리팩토링 시작\ml\mlruns/660890565547137650/13cefe94659e4f47acfff2d27f3efa90/artifacts
+end_time: 1770015628461
+entry_point_name: ''
+experiment_id: '660890565547137650'
+lifecycle_stage: active
+run_id: 13cefe94659e4f47acfff2d27f3efa90
+run_name: anomaly_detection_model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770015619074
+status: 3
+tags: []
+user_id: AKS

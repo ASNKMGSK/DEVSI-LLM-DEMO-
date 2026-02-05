@@ -1,0 +1,14 @@
+artifact_uri: file:C:\Users\AKS\Desktop\데브시스터즈 프로젝트\backend 리팩토링 시작\ml\mlruns/660890565547137650/ee178f1bcefb4f8ea531b1fa3af29679/artifacts
+end_time: 1770015642665
+entry_point_name: ''
+experiment_id: '660890565547137650'
+lifecycle_stage: active
+run_id: ee178f1bcefb4f8ea531b1fa3af29679
+run_name: churn_prediction_model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770015631899
+status: 3
+tags: []
+user_id: AKS

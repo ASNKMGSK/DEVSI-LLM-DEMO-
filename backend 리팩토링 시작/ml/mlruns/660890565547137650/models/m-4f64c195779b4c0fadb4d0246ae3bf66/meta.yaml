@@ -1,0 +1,10 @@
+artifact_location: file:C:\Users\AKS\Desktop\데브시스터즈 프로젝트\backend 리팩토링 시작\ml\mlruns/660890565547137650/models/m-4f64c195779b4c0fadb4d0246ae3bf66/artifacts
+creation_timestamp: 1770015659281
+experiment_id: '660890565547137650'
+last_updated_timestamp: 1770015669029
+model_id: m-4f64c195779b4c0fadb4d0246ae3bf66
+model_type: null
+name: win_rate_model
+source_run_id: 5bb003b6c9a04c4482d7f6fb80dd5ebd
+status: 2
+status_message: null

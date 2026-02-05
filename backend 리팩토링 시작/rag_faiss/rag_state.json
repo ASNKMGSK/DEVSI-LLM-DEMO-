@@ -1,0 +1,10 @@
+{
+  "hash": "2adc1978f5e6c2cb8ffb1642bb3d146d5bd8eede",
+  "files_count": 8,
+  "chunks_count": 620,
+  "last_build_ts": 1769955115.5825613,
+  "error": "",
+  "embed_model": "text-embedding-3-small",
+  "bm25_ready": true,
+  "kg_ready": false
+}

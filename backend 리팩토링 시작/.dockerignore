@@ -1,0 +1,12 @@
+# 최소한만 제외 (보안/불필요한 것만)
+__pycache__/
+*.py[cod]
+.env
+.venv
+venv/
+.git/
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db

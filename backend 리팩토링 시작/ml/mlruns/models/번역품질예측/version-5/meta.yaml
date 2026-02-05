@@ -1,0 +1,15 @@
+creation_timestamp: 1770020180876
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1770020180876
+model_id: m-ad13ff66ea9149e48b6d7129e543e85a
+name: 번역품질예측
+run_id: 68bda94d171747a7ad7cfda74f26876e
+run_link: null
+source: models:/m-ad13ff66ea9149e48b6d7129e543e85a
+status: READY
+status_message: null
+storage_location: file:C:\Users\AKS\Desktop\데브시스터즈 프로젝트\backend 리팩토링 시작\ml\mlruns/660890565547137650/models/m-ad13ff66ea9149e48b6d7129e543e85a/artifacts
+user_id: null
+version: 5
